@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Posts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ThoughtSpace</h1>
+
+    <% for (post of posts) { %>
+      <div class="post">
+        <h3><%= post.username %></h3>
+        <h4><%= post.content %></h4>
+        <div class="post-footer">
+          <a href="/posts/<%= post.id %>" class="details-btn">Details</a>
+          <a href="/posts/<%= post.id %>/edit" class="details-btn"> Edit </a>
+          <form method="post" action="/posts/<%= post.id %>?_method=DELETE" class="delete-form">
+          <button type="submit" class="delete-btn">Delete</button>
+          </form>
+        </div>
+      </div>
+
+    <% } %>
+
+    <div class="add-post-btn">
+      <a href="/posts/new">Add New Post</a>
+    </div>
+  </div>
+</body>
+</html>
