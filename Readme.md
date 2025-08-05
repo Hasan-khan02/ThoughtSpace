@@ -1,5 +1,6 @@
 ThoughtSpace 
 ThoughtSpace is a simple Post Application built using MERN stack principles with EJS as the frontend template engine. This project demonstrates backend REST API integration and rendering dynamic data without a connected database — the data is stored in an array on the server.
+
 📌 Features
 •	Server-side rendering using EJS.
 •	REST API integration for data handling.
@@ -8,6 +9,7 @@ ThoughtSpace is a simple Post Application built using MERN stack principles with
 •	UUID for generating unique post IDs.
 •	Data stored in server-side array (no database connection).
 •	Clean and modular code structure.
+
 🛠️ Tech Stack
 Frontend: EJS (Embedded JavaScript Templates)
 Backend: Node.js, Express.js
